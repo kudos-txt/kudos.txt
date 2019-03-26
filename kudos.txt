@@ -1,1 +1,16 @@
-#
+# kudos.txt - Express gratitude to your contributors.
+# https://github.com/kudos-txt
+
+project:
+  - name: kudos.txt
+    site: kudos-txt.io
+    mail: hello@kudos-txt.io
+
+contributors:
+  - name: daniel-wtd
+    mail: daniel@while-true-do.io
+    role: Owner
+
+partners:
+  - name: while-true-do.io
+    site: while-true-do.io

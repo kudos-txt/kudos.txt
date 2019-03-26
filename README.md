@@ -14,34 +14,135 @@ Express gratitude to your contributors.
 
 ## Motivation
 
-Thousands of Open Source Repositories are providing code. But we should never
+Thousands of Open Source Repositories are hosting code. But we should never
 forget, that this code is made by people. Are these people getting the gratitude
 they deserve? We think, it is time to have a kudos.txt to express the gratitude
-to all of your contributors and give them a place aside the git logs.
+to all of the contributors and give them a place outside of git logs.
 
 ## Description
+
+Kudos (from the Ancient Greek: κῦδος) is acclaim or praise for exceptional
+achievement.
+
+### What is kudos.txt
 
 kudos.txt provides a format to express gratitude to your contributors. It is
 easy to understand, easy to read for humans and machines and it does not force
 you to present data, that you don't want to present.
 
-<!-- TODO: Mich more detailed explanation -->
+### Why a textfile
+
+A textfile is easy to read from humans and machines. It is portable and can
+be used in any OS. It does not require a graphical desktop or even a text editor.
+
+### Difference to humans.txt
+
+[humans.txt](humanstxt.org) is a very nice approach. In fact, it even inspired
+the creators of kudos.txt. Nevertheless, the approach is different.
+
+-   humans.txt focusses on websites, kudos.txt can be used for any contribution.
+-   humans.txt is not easy to be read from machines / software, kudos.txt uses
+    yaml syntax.
+-   humans.txt uses indicators of different length, kudos enforces 4-character
+    indicators.
+-   humans.txt differentiates between team and outside collaborators, kudos.txt
+    does not. Everybody should be seen as a contributor, when interacting with
+    a project.
 
 ## Requirements
 
-A Text Editor is helpful.
+A Text Editor is helpful, but not needed.
 
 ## Installation
 
-Install from [Github](https://github.com/kudos-txt/kudos.txt)
-
-```
-git clone https://github.com/kudos-txt/kudos.txt.git
-```
+No installation is needed. Just download the [kudos.txt](./src/kudos.txt).
 
 ## Usage
 
-Copy the [kudos.txt](./src/kudos.txt) in your repository and fill in your data.
+Copy the [kudos.txt](./src/kudos.txt) to your repository and fill in your data.
+
+### Sections
+
+Currently 4 sections are standardized. You are free to use them or not.
+
+1.  project
+    Contains information for the project itself.
+2.  contributors
+    Contains the contributor information to kudos the contributors.
+3.  partners
+    This section should contain partner projects, sponsors or otherwise related
+    teams, companies or products.
+4.  software
+    Some projects are using libraries or software from other projects.
+    These can be mentioned here, to kudos them.
+
+### Items
+
+Items are listed in the sections.
+
+Each item contains 2 types of information.
+
+1.  mandatory
+    If you want to add an item to a section, you only need to fill the `- name:`.
+    You can use your real name or project handle/nick.
+2.  optional
+    All other information are optional and can be filled in. Nobody should be
+    forced to fill in his `mail` or `site`.
+
+### Syntax
+
+The syntax is heavily inspired by [YAML](https://yaml.org). This will allow
+to use a YAML Linter or any other YAML Tool to process the file. It is also
+very easy to read and humans should be able read the file.
+
+### Example
+
+Names derived from [Alice and Bob](https://en.wikipedia.org/wiki/Alice_and_Bob)
+
+**Simple Example**
+
+If you want to list the contributors, this may be a good idea.
+
+```
+contributors:
+  - name: Alice
+    role: Main Character
+  - name: Bob
+  - name: Carol
+  - name: Chuck
+    role: Bad guy
+```
+
+**Advanced Example**
+
+You can also put an empty line between each item, for better readability.
+
+```
+project:
+  - name: Alice and Bob - The Movie
+    site: example.com
+
+contributors:
+  - name: Alice
+    role: Main Character
+    mail: alice@example.com
+
+  - name: Bob
+    role: Main Character
+    mail: bob@example.com
+
+  - name: Chuck
+    role: Bad Guy
+    mail: secret@spam.example.com
+    work: room 404
+
+partners:
+  - name: example.com
+    site: example.com
+
+software:
+  - name: Mail Client
+```
 
 ## Testing
 
@@ -67,7 +168,5 @@ This work is licensed under a [BSD-3-Clause License](https://opensource.org/lice
 
 -   Site <https://while-true-do.io>
 -   Twitter <https://twitter.com/wtd_news>
--   Code <https://github.com/while-true-do>
+-   Code <https://github.com/kudos-txt>
 -   Mail [hello@while-true-do.io](mailto:hello@while-true-do.io)
--   IRC [freenode, #while-true-do](https://webchat.freenode.net/?channels=while-true-do)
--   Telegram <https://t.me/while_true_do>
