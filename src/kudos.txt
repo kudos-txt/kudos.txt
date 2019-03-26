@@ -1,0 +1,18 @@
+# kudos.txt - Express gratitude to your contributors.
+# https://github.com/kudos-txt
+
+## contributors
+- name: <name>
+  role: <role in project or repository>
+  site: <homepage>, <social>
+  mail: <mail address>
+  work: <workplace>, <company>
+  home: <city>, <country>
+
+## partners and sponsors
+- name: <name>
+  site: <url>
+
+## software and tools
+- name: <name of the software>
+  site: <url>
