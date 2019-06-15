@@ -2,7 +2,7 @@
 name: README.md
 description: This file contains important information for the repository.
 author: kudos-txt.io
-contact: hello@while-true-do.io
+contact: hello@kudos-txt.io
 license: BSD-3-Clause
 -->
 ![](https://img.shields.io/github/license/kudos-txt/kudos.txt.svg?style=flat)
@@ -51,7 +51,7 @@ the creators of kudos.txt. Nevertheless, the approach is different.
 
 ## Requirements
 
-A Text Editor is helpful, but not needed.
+A Text Editor is helpful.
 
 ## Installation
 
@@ -93,7 +93,7 @@ Each item contains 2 types of information.
 
 The syntax is heavily inspired by [YAML](https://yaml.org). This will allow
 to use a YAML Linter or any other YAML Tool to process the file. It is also
-very easy to read and humans should be able read the file.
+very easy to be read from humans.
 
 ### Example
 
@@ -126,10 +126,12 @@ contributors:
   - name: Alice
     role: Main Character
     mail: alice@example.com
+    home: Not in wonderland
 
   - name: Bob
     role: Main Character
     mail: bob@example.com
+    note: Bob sends many mails.
 
   - name: Chuck
     role: Bad Guy
@@ -139,24 +141,19 @@ contributors:
 partners:
   - name: example.com
     site: example.com
+    note: Very useful for examples.
 
 software:
   - name: Mail Client
 ```
 
-## Testing
-
-Most of the "generic" tests are located in the
-[Test Library](https://github.com/while-true-do/test-library). Tests and
-instructions for a single repository are located in the
-[Test Directory](./tests).
-
 ## Contribute
 
 Thank you so much for considering to contribute. We are very happy, when somebody
 is joining the hard work. Please fell free to open
-[Bugs, Feature Requests](https://github.com/kudos-txt/kudos.txt/issues) or
-[Pull Requests](https://github.com/kudos-txt/kudos.txt/pulls) after reading the [Contribution Guideline](https://github.com/while-true-do/doc-library/blob/master/docs/CONTRIBUTING.md).
+[Bugs, Feature Requests](https://github.com/while-true-do/ansible-role-app_ansible/issues)
+or [Pull Requests](https://github.com/while-true-do/ansible-role-app_ansible/pulls) after
+reading the [Contribution Guideline](https://github.com/while-true-do/doc-library/blob/master/docs/CONTRIBUTING.md).
 
 See who has contributed already in the [kudos.txt](./kudos.txt).
 
@@ -166,7 +163,9 @@ This work is licensed under a [BSD-3-Clause License](https://opensource.org/lice
 
 ## Contact
 
--   Site <https://while-true-do.io>
+-   Site <https://kudos-txt.io>
 -   Twitter <https://twitter.com/wtd_news>
 -   Code <https://github.com/kudos-txt>
 -   Mail [hello@while-true-do.io](mailto:hello@while-true-do.io)
+-   IRC [freenode, #while-true-do](https://webchat.freenode.net/?channels=while-true-do)
+-   Telegram <https://t.me/while_true_do>

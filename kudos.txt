@@ -14,3 +14,6 @@ contributors:
 partners:
   - name: while-true-do.io
     site: while-true-do.io
+
+  - name: Style-Cheat
+    site: style-cheat.io

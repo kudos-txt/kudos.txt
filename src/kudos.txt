@@ -3,22 +3,25 @@
 
 project:
   - name: <name of the project>
-    site: <url>
+    site: <url>, <url>
     mail: <mail address>
+    note: <free text notes>
 
 contributors:
   - name: <name of the contributor>
-    code: <special code contribution>
-    home: <city>, <country>
-    mail: <mail address>
+    mail: <mail address>, <mail address>
+    site: <url>, <url>, <url>
     role: <role of the contributor>
-    site: <url>
-    work: <workplace>, <company>
+    home: <country>, <zip>, <country>
+    work: <workplace>, <company>, <job description>
+    note: <free text notes>
 
 partners:
   - name: <name of the partner>
-    site: <url>
+    site: <url>, <url>
+    note: <free text notes>
 
 software:
   - name: <name of the software>
-    site: <url>
+    site: <url>, <url>
+    note: <free text notes>

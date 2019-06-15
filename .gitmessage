@@ -1,7 +1,7 @@
 # name: .gitmessage
 # description: This file helps to write better commit messages.
 # author: kudos-txt.io
-# contact: hello@while-true-do.io
+# contact: hello@kudos-txt.io
 # license: BSD-3-Clause
 #
 # usage: git config commit.template .gitmessage
