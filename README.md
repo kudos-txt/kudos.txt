@@ -5,8 +5,14 @@ author: kudos-txt.io
 contact: hello@kudos-txt.io
 license: BSD-3-Clause
 -->
+
+<!-- github shields -->
 ![](https://img.shields.io/github/license/kudos-txt/kudos.txt.svg?style=flat)
 ![](https://img.shields.io/github/issues/kudos-txt/kudos.txt.svg?style=flat)
+[![Github (tag)](https://img.shields.io/github/tag/kudos-txt/kudos.txt.svg)](https://github.com/kudos-txt/kudos.txt/tags)
+[![Github (license)](https://img.shields.io/github/license/kudos-txt/kudos.txt.svg)](https://github.com/kudos-txt/kudos.txt/blob/master/LICENSE)
+[![Github (issues)](https://img.shields.io/github/issues/kudos-txt/kudos.txt.svg)](https://github.com/kudos-txt/kudos.txt/issues)
+[![Github (pull requests)](https://img.shields.io/github/issues-pr/kudos-txt/kudos.txt.svg)](https://github.com/kudos-txt/kudos.txt/pulls)
 
 # kudos.txt
 
@@ -151,8 +157,8 @@ software:
 
 Thank you so much for considering to contribute. We are very happy, when somebody
 is joining the hard work. Please fell free to open
-[Bugs, Feature Requests](https://github.com/while-true-do/ansible-role-app_ansible/issues)
-or [Pull Requests](https://github.com/while-true-do/ansible-role-app_ansible/pulls) after
+[Bugs, Feature Requests](https://github.com/kudos-txt/kudos.txt/issues)
+or [Pull Requests](https://github.com/kudos-txt/kudos.txt/pulls) after
 reading the [Contribution Guideline](https://github.com/while-true-do/doc-library/blob/master/docs/CONTRIBUTING.md).
 
 See who has contributed already in the [kudos.txt](./kudos.txt).
@@ -166,6 +172,6 @@ This work is licensed under a [BSD-3-Clause License](https://opensource.org/lice
 -   Site <https://kudos-txt.io>
 -   Twitter <https://twitter.com/wtd_news>
 -   Code <https://github.com/kudos-txt>
--   Mail [hello@while-true-do.io](mailto:hello@while-true-do.io)
+-   Mail [hello@kudos-txt.io](mailto:hello@kudos-txt.io)
 -   IRC [freenode, #while-true-do](https://webchat.freenode.net/?channels=while-true-do)
 -   Telegram <https://t.me/while_true_do>
