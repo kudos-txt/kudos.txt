@@ -7,8 +7,6 @@ license: BSD-3-Clause
 -->
 
 <!-- github shields -->
-![](https://img.shields.io/github/license/kudos-txt/kudos.txt.svg?style=flat)
-![](https://img.shields.io/github/issues/kudos-txt/kudos.txt.svg?style=flat)
 [![Github (tag)](https://img.shields.io/github/tag/kudos-txt/kudos.txt.svg)](https://github.com/kudos-txt/kudos.txt/tags)
 [![Github (license)](https://img.shields.io/github/license/kudos-txt/kudos.txt.svg)](https://github.com/kudos-txt/kudos.txt/blob/master/LICENSE)
 [![Github (issues)](https://img.shields.io/github/issues/kudos-txt/kudos.txt.svg)](https://github.com/kudos-txt/kudos.txt/issues)
