@@ -25,21 +25,23 @@ to all of the contributors and give them a place outside of git logs.
 
 ## Description
 
-Kudos (from the Ancient Greek: κῦδος) is acclaim or praise for exceptional
+**Kudos** (from the Ancient Greek: κῦδος) is acclaim or praise for exceptional
 achievement.
 
 ### What is kudos.txt
 
 kudos.txt provides a format to express gratitude to your contributors. It is
 easy to understand, easy to read for humans and machines and it does not force
-you to present data, that you don't want to present.
+you to present data, that you don't want to present. You can extend it or reduce
+it to your needs.
 
-### Why a textfile
+### Why a text file
 
-A textfile is easy to read from humans and machines. It is portable and can
-be used in any OS. It does not require a graphical desktop or even a text editor.
+A text file is easy to read from humans and machines. It is portable and can
+be used in any OS. It does not require a graphical desktop and can be read and
+manipulated even without a text editor.
 
-### Difference to humans.txt
+### Differences to humans.txt
 
 [humans.txt](humanstxt.org) is a very nice approach. In fact, it even inspired
 the creators of kudos.txt. Nevertheless, the approach is different.
@@ -65,39 +67,109 @@ No installation is needed. Just download the [kudos.txt](./src/kudos.txt).
 
 Copy the [kudos.txt](./src/kudos.txt) to your repository and fill in your data.
 
-### Sections
-
-Currently 4 sections are standardized. You are free to use them or not.
-
-1.  project
-    Contains information for the project itself.
-2.  contributors
-    Contains the contributor information to kudos the contributors.
-3.  partners
-    This section should contain partner projects, sponsors or otherwise related
-    teams, companies or products.
-4.  software
-    Some projects are using libraries or software from other projects.
-    These can be mentioned here, to kudos them.
-
-### Items
-
-Items are listed in the sections.
-
-Each item contains 2 types of information.
-
-1.  mandatory
-    If you want to add an item to a section, you only need to fill the `- name:`.
-    You can use your real name or project handle/nick.
-2.  optional
-    All other information are optional and can be filled in. Nobody should be
-    forced to fill in his `mail` or `site`.
-
 ### Syntax
 
-The syntax is heavily inspired by [YAML](https://yaml.org). This will allow
-to use a YAML Linter or any other YAML Tool to process the file. It is also
-very easy to be read from humans.
+Kudos.txt is heavily inspired by YAML. You will find the following parts in
+the example kudos.txt:
+
+```
+# The (<...>) are indicating, that you should replace them with your string.
+
+# A leading hash (#) indicates a comment.
+# <comment>
+
+# A section has no indention.
+<section>:
+# Each section contains of list items (-), which can have multiple items and
+# values assigned.
+  - <item1>: <value1>
+    <item2>: <value2>
+
+  - <item3>: <value3>
+    <item4>: <value4>
+```
+
+### Section
+
+> Definition: a word, which indicates a context
+
+The `<section>:` is indicating a context switch. For now, the below sections are
+defined and standardized. You can add more, if you feel the need. Please also
+feel free to open an issue.
+
+1.  **project**
+
+    This section consists of information about the project.
+
+2.  **contributor**
+
+    A section containing a list of your contributors with some optional
+    information.
+
+3.  **partner**
+
+    A section containing a list of your partners, if you have some and want to
+    mention them.
+
+4.  **software**
+
+    A section containing a list of used software or libraries in your project.
+
+### Item
+
+> Definition: a 4-letter word, which indicates a specific type of information
+
+Items are indicators for a specific information. You can use them optionally in
+any section. The example [kudos.txt](./src/kudos.txt) is giving an idea, what
+makes sense. You can add new items, if you feel the need. The standardized items
+are:
+
+1.  **name**
+
+    The real name, nick or any other presentation of "who".
+
+1.  **site**
+
+    A website url like "https://example.com". You can specify multiple urls
+    separated by commas.
+
+1.  **blog**
+
+    A blog url like "https://blog.example.com".
+
+1.  **help**
+
+    A support url like "https://help.example.com" or
+    a support contact like "help@example.com" or
+    a support contact number like "+49 111 222 333".
+
+1.  **news**
+
+    A support url to your newsfeed or newsletter or any other source of news.
+
+1.  **mail**
+
+    A mail address to contact the **name** like "name@example.com"
+
+1.  **chat**
+
+    A chat address in the form of "skype:mynick" to present your nick or
+    "slack:mychannel" to indicate a channel or
+    "https://chat.example.com" to indicate a url to your chat information.
+
+1.  **home**
+
+    An indicator of your home. You can use as many information as you want
+    separated by commas.
+
+1.  **work**
+
+    An indicator to show your workplace. This can be the company name or
+    job title or job description or something abstract.
+
+1.  **note**
+
+    A field, where you can put any other note down.
 
 ### Example
 
@@ -105,10 +177,14 @@ Names derived from [Alice and Bob](https://en.wikipedia.org/wiki/Alice_and_Bob)
 
 **Simple Example**
 
-If you want to list the contributors, this may be a good idea.
+If you want to list the contributors, this example may be a good start.
 
 ```
-contributors:
+project:
+  - name: Alice and Bob - The Movie
+    site: https://example.com
+
+contributor:
   - name: Alice
     role: Main Character
   - name: Bob
@@ -119,14 +195,16 @@ contributors:
 
 **Advanced Example**
 
-You can also put an empty line between each item, for better readability.
+You can also put empty lines between each item, for better readability and
+provide addional information
 
 ```
 project:
   - name: Alice and Bob - The Movie
-    site: example.com
+    site: https://example.com
+    mail: mail@example.com
 
-contributors:
+contributor:
   - name: Alice
     role: Main Character
     mail: alice@example.com
@@ -142,14 +220,38 @@ contributors:
     mail: secret@spam.example.com
     work: room 404
 
-partners:
-  - name: example.com
-    site: example.com
+partner:
+  - name: example.org
+    site: https://example.org
     note: Very useful for examples.
 
 software:
-  - name: Mail Client
+  - name: VIM
+    note: Any other editor may work, too.
 ```
+
+## FAQ
+
+1.  **Q** Do I need to put information 'xxx' in my kudos.txt?
+
+    **A** No, you can reduce the amount of information, if you want.
+
+2.  **Q** Why are 4-letter / 4-character items enforced?
+
+    **A** This allows a very clear readability for many humans.
+
+3.  **Q** I want to have a section "developers" and "managers". Is this possible?
+
+    **A** Yes, you can add sections, if you want. Please also feel free to contribute.
+
+4.  **Q** Do you offer any tools to parse the kudos.txt in [html|markdown|json|x]?
+
+    **A** Not yet, but this is definitively the plan. Please feel free to help.
+
+5.  **Q** Why do you came up tith kudos.txt?
+
+    **A** We wanted to establish something standardized, machine and human
+    readable to express gratitude to contributors, partners, etc.
 
 ## Contribute
 
