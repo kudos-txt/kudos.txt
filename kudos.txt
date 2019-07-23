@@ -6,14 +6,16 @@ project:
     site: kudos-txt.io
     mail: hello@kudos-txt.io
 
-contributors:
+contributor:
   - name: daniel-wtd
+    role: Founder / Owner
+    site: https://while-true-do.io
     mail: daniel@while-true-do.io
-    role: Owner
+    chat: freenode:daniel-wtd
 
 partners:
   - name: while-true-do.io
     site: while-true-do.io
 
-  - name: Style-Cheat
+  - name: style-cheat
     site: style-cheat.io

@@ -3,25 +3,41 @@
 
 project:
   - name: <name of the project>
-    site: <url>, <url>
-    mail: <mail address>
+    site: <website url>
+    blog: <blog url>
+    help: <support url>
+    news: <news url>, <news feed url>
+    mail: <mail@domain.tld>
+    chat: <service:nick>, <service:channel>, <url>
     note: <free text notes>
 
-contributors:
-  - name: <name of the contributor>
-    mail: <mail address>, <mail address>
-    site: <url>, <url>, <url>
-    role: <role of the contributor>
-    home: <country>, <zip>, <country>
-    work: <workplace>, <company>, <job description>
+contributor:
+  - name: <name or nick of the contributor>
+    role: <role in the project>
+    site: <website url>
+    blog: <blog url>
+    mail: <mail@domain.tld>
+    chat: <service:nick>, <service:channel>, <url>
+    home: <country>, <region>, <zip>, <city>, <address>
+    work: <company>, <job title>, <job description>
     note: <free text notes>
 
-partners:
+partner:
   - name: <name of the partner>
-    site: <url>, <url>
+    site: <website url>
+    blog: <blog url>
+    help: <support url>
+    news: <news url>, <news feed url>
+    mail: <mail@domain.tld>
+    chat: <service:nick>, <service:channel>, <url>
     note: <free text notes>
 
 software:
   - name: <name of the software>
-    site: <url>, <url>
+    site: <website url>
+    blog: <blog url>
+    help: <support url>
+    news: <news url>, <news feed url>
+    mail: <mail@domain.tld>
+    chat: <service:nick>, <service:channel>, <url>
     note: <free text notes>
